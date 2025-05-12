@@ -1,0 +1,26 @@
+@import 'leaflet/dist/leaflet.css';
+@import 'leaflet-distortableimage/dist/leaflet.distortableimage.css';
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .leaflet-touch .leaflet-control-container .leaflet-bar a {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+
+  .leaflet-touch .leaflet-control-container .leaflet-bar {
+    border-radius: 8px;
+  }
+}
