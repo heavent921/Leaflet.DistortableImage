@@ -12,8 +12,38 @@
   height: 100%;
 }
 
+.instructions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.instructions p {
+  margin: 0 0 10px 0;
+}
+
+.instructions p:last-child {
+  margin: 0;
+}
+
 /* Mobile optimizations */
 @media (max-width: 768px) {
+  .instructions {
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+    left: 10px;
+    max-width: none;
+  }
+
   .leaflet-touch .leaflet-control-container .leaflet-bar a {
     width: 44px;
     height: 44px;
